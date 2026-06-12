@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030303" />
+    <meta name="description" content="Scroll-driven canvas experience for Franck Muller Vanguard." />
+    <title>Franck Muller Vanguard · Scroll Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="page" aria-label="Franck Muller Vanguard scroll experience">
+      <section class="sequence-section" data-frame-count="500">
+        <div class="sequence-sticky">
+          <canvas id="sequence-canvas" aria-label="Scroll driven Franck Muller Vanguard animation"></canvas>
+
+          <div class="ambient-layer" aria-hidden="true">
+            <div class="gold-orbit gold-orbit-one"></div>
+            <div class="gold-orbit gold-orbit-two"></div>
+            <div class="grain"></div>
+          </div>
+
+          <div class="luxury-chrome" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="loader" id="loader">
+            <div class="loader-card">
+              <p>Franck Muller</p>
+              <span id="loader-text">Loading frames 0%</span>
+            </div>
+          </div>
+
+          <div class="brand-lockup" aria-label="Franck Muller Vanguard">
+            <span>Franck Muller</span>
+            <strong>Vanguard</strong>
+          </div>
+
+          <div class="frame-indicator" aria-hidden="true">
+            <span id="frame-label">Frame 000</span>
+            <div class="frame-line"><i id="frame-progress"></i></div>
+          </div>
+
+          <div class="story-layer" aria-live="polite">
+            <article class="story-panel" data-start="0" data-end="110" data-align="left">
+              <p class="panel-kicker">Vanguard collection</p>
+              <h1>Le temps prend une forme sculpturale.</h1>
+              <p class="panel-copy">
+                Une présence puissante, une boîte tonneau iconique et une lecture immédiatement reconnaissable.
+              </p>
+              <span class="panel-tag">CGI product reveal</span>
+            </article>
+
+            <article class="story-panel" data-start="120" data-end="250" data-align="right">
+              <p class="panel-kicker">Architectural case</p>
+              <h2>Des courbes tendues, pensées pour capter la lumière.</h2>
+              <p class="panel-copy">
+                Chaque ligne guide le regard vers le cadran, entre sportivité maîtrisée et élégance contemporaine.
+              </p>
+              <span class="panel-tag">Tonneau silhouette</span>
+            </article>
+
+            <article class="story-panel" data-start="260" data-end="390" data-align="left-bottom">
+              <p class="panel-kicker">Mechanical presence</p>
+              <h2>Un caractère visuel qui se révèle au mouvement.</h2>
+              <p class="panel-copy">
+                Les reflets, les volumes et les détails composent une scène premium, immersive et cinématographique.
+              </p>
+              <span class="panel-tag">Luxury motion design</span>
+            </article>
+
+            <article class="story-panel" data-start="405" data-end="555" data-align="center-bottom">
+              <p class="panel-kicker">Franck Muller signature</p>
+              <h2>Vanguard, l’audace horlogère en pleine lumière.</h2>
+              <p class="panel-copy">
+                Une montre de caractère, conçue comme une déclaration de style et de précision.
+              </p>
+              <span class="panel-tag">Master of complications</span>
+            </article>
+          </div>
+
+          <div class="scroll-hint" aria-hidden="true">
+            <span>Scroll</span>
+            <i></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
